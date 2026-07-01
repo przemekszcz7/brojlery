@@ -1,0 +1,1617 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurczaki Brojlery – Mięso z kurczaka swojskie | Załęcze Małe</title>
+    
+    <!-- Metatagi SEO -->
+    <meta name="description" content="Swojskie tuszki z kurczaka prosto od rolnika w Załęczu Małym. Naturalnie karmione prażoną pszenicą, bez chemii i sztucznych dodatków. Dowóz Wieluń, Działoszyn i okolice." />
+    <meta name="keywords" content="kurczaki brojlery, mięso z kurczaka swojskie, swojskie kurczaki, naturalne mięso drobiowe, kurczaki Załęcze Małe, kurczak od rolnika, rosół swojski" />
+    <meta property="og:title" content="Kurczaki Brojlery – Mięso z kurczaka swojskie" />
+    <meta property="og:description" content="Świeże, naturalne kurczaki brojlery karmione prażoną pszenicą. Bez antybiotyków i ulepszaczy. Zamów z dostawą!" />
+    <meta property="og:image" content="https://i.ibb.co/gbqqzdVz/522962860-122102818592952908-3706293709010503052-n.jpg" />
+    <meta property="og:type" content="website" />
+
+    <style>
+      /* --- IMPORT ELEGANCKICH CZCIONEK Z GOOGLE FONTS --- */
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+      /* --- ZMIENNE KOLORYSTYCZNE I CONFIG --- */
+      :root {
+        --color-beige: #f3e7d3;
+        --color-cream: #fffaf0;
+        --color-brown: #6b4a2b;
+        --color-dark: #2c1a10;
+        --color-green: #5a7a4a;
+        --color-green-light: #eff4ec;
+        --color-green-dark: #3f5832;
+        --color-white: #ffffff;
+        --color-gray-light: #f9f6f0;
+        --color-shadow: rgba(44, 26, 16, 0.08);
+        --font-display: 'Playfair Display', Georgia, serif;
+        --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      }
+
+      /* --- BASE STYLES --- */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        background-color: var(--color-cream);
+        color: var(--color-dark);
+        line-height: 1.6;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* --- TYPOGRAPHY --- */
+      h1, h2, h3, h4 {
+        font-family: var(--font-display);
+        font-weight: 700;
+        line-height: 1.25;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        color: rgba(44, 26, 16, 0.85);
+      }
+
+      a {
+        color: var(--color-brown);
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      /* --- SPACING & CONTAINER --- */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      section {
+        padding: 5.5rem 0;
+        position: relative;
+      }
+
+      /* --- HEADER & NAVIGATION --- */
+      .top-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba(255, 250, 240, 0.98);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(107, 74, 43, 0.1);
+        box-shadow: 0 2px 15px rgba(44, 26, 16, 0.03);
+      }
+
+      .top-bar {
+        background-color: var(--color-dark);
+        color: var(--color-beige);
+        font-size: 0.82rem;
+        font-weight: 500;
+        padding: 0.45rem 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .top-bar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .top-bar-text-highlight {
+        color: var(--color-white);
+        font-weight: 700;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .logo-area {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+
+      .header-logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--color-brown);
+      }
+
+      .header-title {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: var(--color-dark);
+        letter-spacing: -0.5px;
+      }
+
+      .header-nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .header-nav a {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--color-dark);
+        position: relative;
+        padding: 0.3rem 0;
+      }
+
+      .header-nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--color-green);
+        transition: width 0.3s ease;
+      }
+
+      .header-nav a:hover {
+        color: var(--color-green);
+      }
+
+      .header-nav a:hover::after {
+        width: 100%;
+      }
+
+      .header-nav .btn-nav {
+        background-color: var(--color-green);
+        color: var(--color-white);
+        padding: 0.6rem 1.2rem;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 10px rgba(90, 122, 74, 0.2);
+      }
+
+      .header-nav .btn-nav:hover {
+        background-color: var(--color-green-dark);
+        color: var(--color-white);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(90, 122, 74, 0.3);
+      }
+
+      .header-nav .btn-nav::after {
+        display: none;
+      }
+
+      /* --- HERO SECTION --- */
+      .hero-section {
+        height: 88vh;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(44, 26, 16, 0.72), rgba(44, 26, 16, 0.85)), url('./src/assets/images/farm_background_1782899291265.jpg');
+        background-size: cover;
+        background-position: center;
+        color: var(--color-white);
+        text-align: center;
+        padding: 0 1.5rem;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+        z-index: 10;
+      }
+
+      .hero-badge {
+        display: inline-block;
+        background-color: var(--color-green);
+        color: var(--color-white);
+        padding: 0.4rem 1.2rem;
+        border-radius: 30px;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 10px rgba(90, 122, 74, 0.3);
+      }
+
+      .hero-title {
+        font-size: clamp(2.5rem, 6vw, 4.2rem);
+        font-weight: 900;
+        margin-bottom: 0.5rem;
+        letter-spacing: -1px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero-subtitle {
+        font-size: clamp(1.3rem, 3vw, 2.2rem);
+        font-family: var(--font-sans);
+        font-weight: 300;
+        color: var(--color-beige);
+        margin-bottom: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      .hero-description {
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 2.5rem;
+        font-weight: 400;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 1.2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* --- BUTTONS --- */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .btn-primary {
+        background-color: var(--color-green);
+        color: var(--color-white);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--color-green-dark);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(90, 122, 74, 0.4);
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        color: var(--color-white);
+        border: 2px solid var(--color-white);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--color-white);
+        color: var(--color-dark);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      /* --- HERO ANIMATIONS (PURE CSS) --- */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade {
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+      .animate-title {
+        animation: slideUp 0.8s ease-out 0.15s forwards;
+        opacity: 0;
+      }
+      .animate-subtitle {
+        animation: slideUp 0.8s ease-out 0.3s forwards;
+        opacity: 0;
+      }
+      .animate-desc {
+        animation: slideUp 0.8s ease-out 0.45s forwards;
+        opacity: 0;
+      }
+      .animate-actions {
+        animation: slideUp 0.8s ease-out 0.6s forwards;
+        opacity: 0;
+      }
+
+      /* --- COMMON SECTION HEADERS --- */
+      .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      .section-tag {
+        display: inline-block;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color-green);
+        letter-spacing: 2px;
+        margin-bottom: 0.6rem;
+      }
+
+      .section-title {
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+        color: var(--color-dark);
+        font-weight: 800;
+      }
+
+      .section-subtitle {
+        font-size: 1.1rem;
+        color: rgba(44, 26, 16, 0.7);
+        max-width: 600px;
+        margin: 0.8rem auto 0 auto;
+      }
+
+      .title-divider {
+        width: 70px;
+        height: 3px;
+        background-color: var(--color-brown);
+        margin: 1.2rem auto 0 auto;
+        border-radius: 2px;
+      }
+
+      .title-divider-left {
+        width: 60px;
+        height: 3px;
+        background-color: var(--color-brown);
+        margin: 1rem 0;
+        border-radius: 2px;
+      }
+
+      /* --- O NAS SECTION --- */
+      .about-section {
+        background-color: var(--color-cream);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      .about-text {
+        font-size: 1.05rem;
+      }
+
+      .about-lead {
+        font-size: 1.35rem;
+        font-family: var(--font-display);
+        color: var(--color-brown);
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 1.8rem;
+        position: relative;
+        padding-left: 1.5rem;
+        border-left: 4px solid var(--color-green);
+      }
+
+      .about-text p {
+        margin-bottom: 1.2rem;
+        font-weight: 400;
+      }
+
+      .about-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.8rem;
+      }
+
+      .feature-card {
+        background-color: var(--color-white);
+        padding: 1.8rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px var(--color-shadow);
+        border: 1px solid rgba(107, 74, 43, 0.05);
+        transition: all 0.3s ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(107, 74, 43, 0.1);
+      }
+
+      .feature-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.2rem;
+        background-color: var(--color-green-light);
+        color: var(--color-green);
+      }
+
+      .feature-icon svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      .feature-info h3 {
+        font-size: 1.1rem;
+        color: var(--color-dark);
+        margin-bottom: 0.5rem;
+        font-family: var(--font-sans);
+        font-weight: 700;
+      }
+
+      .feature-info p {
+        font-size: 0.88rem;
+        margin-bottom: 0;
+        color: rgba(44, 26, 16, 0.7);
+        line-height: 1.45;
+      }
+
+      /* --- OFERTA SECTION --- */
+      .offer-section {
+        background-color: var(--color-beige);
+      }
+
+      .offer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+      }
+
+      .offer-card {
+        background-color: var(--color-white);
+        border-radius: 20px;
+        padding: 2.5rem;
+        position: relative;
+        box-shadow: 0 12px 30px var(--color-shadow);
+        border: 1px solid rgba(107, 74, 43, 0.08);
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .offer-card:hover {
+        transform: translateY(-8px) scale(1.01);
+        box-shadow: 0 20px 40px rgba(107, 74, 43, 0.15);
+      }
+
+      .offer-badge-card {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+        background-color: var(--color-brown);
+        color: var(--color-white);
+        padding: 0.3rem 0.9rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 20px;
+        letter-spacing: 1px;
+      }
+
+      .offer-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--color-cream);
+        color: var(--color-brown);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        border: 2px solid var(--color-beige);
+      }
+
+      .offer-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .offer-card h3 {
+        font-size: 1.6rem;
+        color: var(--color-dark);
+        margin-bottom: 1.2rem;
+        font-weight: 800;
+      }
+
+      .offer-details {
+        list-style: none;
+        margin-bottom: 2rem;
+        flex-grow: 1;
+      }
+
+      .offer-details li {
+        font-size: 0.95rem;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid rgba(107, 74, 43, 0.08);
+        color: rgba(44, 26, 16, 0.8);
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+
+      .offer-details li::before {
+        content: "✓";
+        color: var(--color-green);
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      .offer-details li:last-child {
+        border-bottom: none;
+      }
+
+      .offer-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 1rem;
+      }
+
+      .offer-highlight {
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: var(--color-green);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .btn-card {
+        background-color: var(--color-dark);
+        color: var(--color-white);
+        padding: 0.7rem 1.4rem;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .btn-card:hover {
+        background-color: var(--color-brown);
+        color: var(--color-white);
+      }
+
+      /* --- DLACZEGO MY SECTION (DARK FOREST STYLE) --- */
+      .why-us-section {
+        background-color: var(--color-green);
+        color: var(--color-white);
+      }
+
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.2rem;
+      }
+
+      .why-tile {
+        background-color: rgba(255, 255, 255, 0.07);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 2rem 1.4rem;
+        border-radius: 18px;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .why-tile:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+        transform: translateY(-5px);
+      }
+
+      .why-icon-svg {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 1.2rem;
+        color: var(--color-beige);
+        stroke-width: 1.8;
+      }
+
+      .why-tile h3 {
+        font-size: 1.15rem;
+        font-family: var(--font-sans);
+        font-weight: 700;
+        margin-bottom: 0.8rem;
+        color: var(--color-beige);
+      }
+
+      .why-tile p {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.85);
+        line-height: 1.55;
+        margin-bottom: 0;
+      }
+
+      /* --- CULINARY (ZASTOSOWANIE MIĘSA) --- */
+      .culinary-section {
+        background-color: var(--color-cream);
+      }
+
+      .culinary-layout {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 5rem;
+        align-items: center;
+      }
+
+      .culinary-image-container {
+        position: relative;
+      }
+
+      .culinary-img {
+        width: 100%;
+        border-radius: 24px;
+        box-shadow: 20px 20px 0px var(--color-beige);
+        display: block;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .culinary-image-container:hover .culinary-img {
+        transform: scale(1.02);
+      }
+
+      .culinary-badge {
+        position: absolute;
+        bottom: -15px;
+        right: 25px;
+        background-color: var(--color-green);
+        color: var(--color-white);
+        padding: 0.8rem 1.6rem;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        box-shadow: 0 8px 20px rgba(90, 122, 74, 0.3);
+      }
+
+      .culinary-content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .culinary-lead {
+        font-size: 1.15rem;
+        line-height: 1.6;
+        color: var(--color-brown);
+        margin-bottom: 2rem;
+        font-weight: 500;
+      }
+
+      .use-cases {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+
+      .use-case-item {
+        display: flex;
+        gap: 1.2rem;
+        align-items: flex-start;
+      }
+
+      .use-case-num {
+        font-family: var(--font-display);
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--color-green);
+        line-height: 1;
+        background-color: var(--color-green-light);
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      .use-case-item h4 {
+        font-size: 1.1rem;
+        font-family: var(--font-sans);
+        font-weight: 700;
+        color: var(--color-dark);
+        margin-bottom: 0.3rem;
+      }
+
+      .use-case-item p {
+        font-size: 0.9rem;
+        color: rgba(44, 26, 16, 0.7);
+        margin-bottom: 0;
+      }
+
+      /* --- DOSTAWA SECTION --- */
+      .delivery-section {
+        background-color: var(--color-beige);
+      }
+
+      .delivery-card {
+        background-color: var(--color-white);
+        border-radius: 24px;
+        padding: 4rem;
+        box-shadow: 0 15px 40px var(--color-shadow);
+        border: 1px solid rgba(107, 74, 43, 0.05);
+        text-align: center;
+      }
+
+      .delivery-icon-big {
+        width: 80px;
+        height: 80px;
+        background-color: var(--color-green-light);
+        color: var(--color-green);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.8rem auto;
+      }
+
+      .delivery-icon-big svg {
+        width: 40px;
+        height: 40px;
+      }
+
+      .delivery-card h2 {
+        font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+        color: var(--color-dark);
+        margin-bottom: 1rem;
+      }
+
+      .delivery-desc {
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto 2.5rem auto;
+        color: rgba(44, 26, 16, 0.75);
+      }
+
+      .delivery-zones {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 3.5rem;
+        flex-wrap: wrap;
+      }
+
+      .zone {
+        background-color: var(--color-cream);
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        border: 2px solid var(--color-beige);
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: var(--color-dark);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+      }
+
+      .zone-bullet {
+        font-size: 1.2rem;
+      }
+
+      .zone-info {
+        width: 100%;
+        font-size: 0.95rem;
+        color: var(--color-brown);
+        font-weight: 600;
+        margin-top: -1rem;
+      }
+
+      .delivery-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 2rem;
+        border-top: 1px solid rgba(107, 74, 43, 0.1);
+        padding-top: 3.5rem;
+      }
+
+      .step {
+        text-align: center;
+        position: relative;
+      }
+
+      .step-num {
+        width: 36px;
+        height: 36px;
+        background-color: var(--color-dark);
+        color: var(--color-white);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.2rem auto;
+        font-weight: 700;
+        font-size: 0.95rem;
+      }
+
+      .step h4 {
+        font-size: 1.1rem;
+        font-family: var(--font-sans);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--color-dark);
+      }
+
+      .step p {
+        font-size: 0.88rem;
+        color: rgba(44, 26, 16, 0.7);
+        margin-bottom: 0;
+      }
+
+      /* --- KONTAKT SECTION --- */
+      .contact-section {
+        background-color: var(--color-cream);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-bottom: 4.5rem;
+      }
+
+      .contact-card {
+        background-color: var(--color-white);
+        border-radius: 20px;
+        padding: 2.5rem;
+        text-align: center;
+        box-shadow: 0 10px 30px var(--color-shadow);
+        border: 1px solid rgba(107, 74, 43, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 320px;
+        transition: all 0.3s ease;
+      }
+
+      .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(107, 74, 43, 0.12);
+      }
+
+      .border-accent {
+        border-top: 5px solid var(--color-green);
+      }
+
+      .border-facebook {
+        border-top: 5px solid #1877f2;
+      }
+
+      .contact-card-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--color-cream);
+        color: var(--color-green);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.2rem;
+      }
+
+      .contact-card-icon.fb-icon {
+        color: #1877f2;
+        background-color: #f0f7ff;
+      }
+
+      .contact-card-icon svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .contact-card h3 {
+        font-size: 1.3rem;
+        font-family: var(--font-sans);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--color-dark);
+      }
+
+      .contact-value {
+        font-family: var(--font-display);
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--color-dark);
+        margin: 0.5rem 0;
+      }
+
+      .contact-subtext {
+        font-size: 0.88rem;
+        color: rgba(44, 26, 16, 0.6);
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-action-btn {
+        background-color: var(--color-green);
+        color: var(--color-white);
+        padding: 0.7rem 1.8rem;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        width: 100%;
+        transition: all 0.3s ease;
+      }
+
+      .contact-card:hover .contact-action-btn {
+        background-color: var(--color-green-dark);
+      }
+
+      .contact-action-btn.fb-btn {
+        background-color: #1877f2;
+      }
+
+      .contact-card:hover .contact-action-btn.fb-btn {
+        background-color: #0e5fc2;
+      }
+
+      .contact-badge-info {
+        background-color: var(--color-beige);
+        color: var(--color-brown);
+        padding: 0.5rem 1.2rem;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .contact-logo-box {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-top: 3rem;
+        border-top: 1px solid rgba(107, 74, 43, 0.1);
+      }
+
+      .contact-farm-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid var(--color-beige);
+        margin-bottom: 1.2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .contact-logo-box h4 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        color: var(--color-dark);
+      }
+
+      .contact-logo-box p {
+        font-size: 0.95rem;
+        color: rgba(44, 26, 16, 0.7);
+        margin-bottom: 0;
+      }
+
+      /* --- FOOTER --- */
+      .footer {
+        background-color: var(--color-dark);
+        color: var(--color-cream);
+        padding: 5rem 0 2rem 0;
+        border-top: 4px solid var(--color-brown);
+      }
+
+      .footer h3 {
+        color: var(--color-white);
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+      }
+
+      .footer h4 {
+        color: var(--color-beige);
+        margin-bottom: 1.2rem;
+        font-size: 1.15rem;
+        font-family: var(--font-sans);
+        font-weight: 700;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1.2fr;
+        gap: 4rem;
+        margin-bottom: 4rem;
+      }
+
+      .footer-brand p {
+        color: rgba(255, 250, 240, 0.75);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      .footer-links ul {
+        list-style: none;
+      }
+
+      .footer-links ul li {
+        margin-bottom: 0.8rem;
+      }
+
+      .footer-links ul li a {
+        color: rgba(255, 250, 240, 0.75);
+        font-size: 0.95rem;
+      }
+
+      .footer-links ul li a:hover {
+        color: var(--color-beige);
+        padding-left: 5px;
+      }
+
+      .footer-contact p {
+        color: rgba(255, 250, 240, 0.75);
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .footer-contact p a {
+        color: var(--color-beige);
+        font-weight: 600;
+      }
+
+      .footer-contact p a:hover {
+        color: var(--color-white);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 250, 240, 0.1);
+        padding-top: 2rem;
+        text-align: center;
+        font-size: 0.85rem;
+        color: rgba(255, 250, 240, 0.75);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer-bottom p {
+        color: #ffffff;
+      }
+
+      .footer-author {
+        font-style: italic;
+      }
+
+      /* --- RESPONSIVENESS (MOBILE-FIRST) --- */
+      @media (max-width: 1024px) {
+        .about-grid {
+          gap: 2.5rem;
+        }
+        .culinary-layout {
+          gap: 3rem;
+        }
+        .why-grid {
+          display: flex;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          gap: 1rem;
+          padding-bottom: 1rem;
+          scrollbar-width: thin;
+          -webkit-overflow-scrolling: touch;
+        }
+        .why-tile {
+          flex: 0 0 250px;
+          scroll-snap-align: start;
+        }
+      }
+
+      @media (max-width: 768px) {
+        section {
+          padding: 4rem 0;
+        }
+
+        .header-nav a:not(.btn-nav) {
+          display: none;
+        }
+
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+
+        .about-text {
+          order: 1;
+        }
+
+        .about-features {
+          order: 2;
+        }
+
+        .culinary-layout {
+          grid-template-columns: 1fr;
+          gap: 3.5rem;
+        }
+
+        .culinary-img {
+          box-shadow: 12px 12px 0px var(--color-beige);
+        }
+
+        .delivery-card {
+          padding: 2.5rem 1.5rem;
+        }
+
+        .delivery-zones {
+          gap: 1rem;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .zone {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+          gap: 2.5rem;
+        }
+
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .about-features {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .btn {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- STICKY HEADER -->
+    <header class="top-header">
+      <div class="top-bar">
+        <div class="top-bar-container">
+          <span>Gospodarstwo Załęcze Małe | Swojski drób najwyższej jakości</span>
+          <span>Telefon: <strong class="top-bar-text-highlight">535 133 195</strong> | Dowóz: Wieluń, Działoszyn i okolice</span>
+        </div>
+      </div>
+      <div class="header-container">
+        <div class="logo-area">
+          <img src="https://i.ibb.co/gbqqzdVz/522962860-122102818592952908-3706293709010503052-n.jpg" alt="Logo Kurczaki Brojlery" class="header-logo" referrerPolicy="no-referrer">
+          <span class="header-title">Kurczaki Brojlery</span>
+        </div>
+        <nav class="header-nav">
+          <a href="#o-nas">O nas</a>
+          <a href="#oferta">Oferta</a>
+          <a href="#dlaczego-my">Dlaczego my</a>
+          <a href="#zastosowanie">Zastosowanie</a>
+          <a href="#dostawa">Dostawa</a>
+          <a href="#kontakt" class="btn-nav">Zadzwoń teraz</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge animate-fade">Gospodarstwo Załęcze Małe</div>
+        <h1 class="hero-title animate-title">Kurczaki Brojlery</h1>
+        <h2 class="hero-subtitle animate-subtitle">Mięso z kurczaka swojskie</h2>
+        <p class="hero-description animate-desc">Naturalne tuszki prosto od gospodarza – świeżość, kruchość i smak tradycji, którym możesz w pełni zaufać.</p>
+        <div class="hero-actions animate-actions">
+          <a href="tel:535133195" class="btn btn-primary">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Zadzwoń teraz
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61578587256742" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Zamów przez Facebook
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- O NAS SECTION -->
+    <section id="o-nas" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tradycyjna Hodowla</span>
+          <h2 class="section-title">O Naszym Gospodarstwie</h2>
+          <div class="title-divider"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="about-lead">„Oferujemy świeże kurczaki brojlery karmione naturalnie prażoną pszenicą. Bez chemii, bez antybiotyków – tylko naturalny smak i jakość prosto z gospodarstwa.”</p>
+            <p>Nasze gospodarstwo mieści się w Załęczu Małym. Drób rośnie w bezstresowych warunkach, mając stały dostęp do naturalnego pożywienia i czystej wody. Stawiamy na tradycyjną jakość i zadowolenie klientów poszukujących prawdziwego, zdrowego drobiu.</p>
+            <p>Dzięki bezpośredniej sprzedaży eliminujemy zbędnych pośredników, dzięki czemu otrzymują Państwo najświeższy możliwy produkt w uczciwej, rolniczej cenie.</p>
+          </div>
+          <div class="about-features">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m11 11 3-3"/><path d="m8.5 13.5 3-3"/><path d="m6 16 3-3"/><path d="m13.5 8.5 3-3"/><path d="m16 6 3-3"/><path d="M3 20h3c2.8 0 5-2.2 5-5V3c0-.6-.4-1-1-1H9a4 4 0 0 0-4 4v11c0 1.1-.9 2-2 2z"/></svg>
+              </div>
+              <div class="feature-info">
+                <h3>Naturalne żywienie</h3>
+                <p>Pasza oparta na prażonej pszenicy nadaje mięsu niesamowity zapach i smak.</p>
+              </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="feature-info">
+                <h3>Świeżość codzienna</h3>
+                <p>Tuszki przygotowywane na zamówienie klienta, co gwarantuje pełną świeżość.</p>
+              </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="feature-info">
+                <h3>Sprzedaż bezpośrednia</h3>
+                <p>Kupujesz bezpośrednio od hodowcy z gospodarstwa w Załęczu Małym.</p>
+              </div>
+            </div>
+            <!-- Feature 4 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div class="feature-info">
+                <h3>Sprawdzona jakość</h3>
+                <p>Pewne źródło, tradycyjna dbałość na każdym etapie hodowli i czyszczenia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFERTA SECTION -->
+    <section id="oferta" class="offer-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Nasza Oferta</span>
+          <h2 class="section-title">Co Mamy Dla Ciebie?</h2>
+          <div class="title-divider"></div>
+          <p class="section-subtitle">Świeży, naturalny drób najwyższej próby, przygotowany tak, jak dla własnej rodziny.</p>
+        </div>
+        <div class="offer-grid">
+          <!-- Card 1 -->
+          <div class="offer-card">
+            <div class="offer-badge-card">Wyjątkowy Smak</div>
+            <div class="offer-icon-wrapper">
+              <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><circle cx="12" cy="10" r="3"/><path d="M12 13v5"/></svg>
+            </div>
+            <h3>Kurczak Brojler</h3>
+            <ul class="offer-details">
+              <li><strong>Waga kurczaka:</strong> 2,5 kg – 3,2 kg</li>
+              <li>Świeże, nigdy niemrożone mięso</li>
+              <li>Wyjątkowa kruchość i struktura</li>
+              <li>Naturalnie gęste i sycące mięso</li>
+            </ul>
+            <div class="offer-footer">
+              <span class="offer-highlight">Idealne na obiad</span>
+              <a href="tel:535133195" class="btn-card">Zamów</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="offer-card">
+            <div class="offer-badge-card">Swojski Drób</div>
+            <div class="offer-icon-wrapper">
+              <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Tuszki Drobiowe</h3>
+            <ul class="offer-details">
+              <li><strong>Średnia waga:</strong> 2,5 kg – 3,5 kg</li>
+              <li>Bez chemii, konserwantów i sztucznej wody</li>
+              <li>Starannie oczyszczona i wypatroszona</li>
+              <li>Tradycyjnie żółtawy kolor wiejskiego drobiu</li>
+            </ul>
+            <div class="offer-footer">
+              <span class="offer-highlight">Swojski rosół</span>
+              <a href="tel:535133195" class="btn-card">Zamów</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="offer-card">
+            <div class="offer-icon-wrapper">
+              <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Odbiorcy Hurtowi & Detal</h3>
+            <ul class="offer-details">
+              <li><strong>Odbiorcy:</strong> Rodziny oraz Gastronomia</li>
+              <li>Możliwość stałych, cyklicznych dostaw</li>
+              <li>Zawsze świeża partia na dany dzień</li>
+              <li>Konkurencyjne ceny bezpośrednio od rolnika</li>
+            </ul>
+            <div class="offer-footer">
+              <span class="offer-highlight">Dla każdego</span>
+              <a href="tel:535133195" class="btn-card">Zapytaj</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DLACZEGO MY SECTION -->
+    <section id="dlaczego-my" class="why-us-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="color: var(--color-beige);">Nasze wartości</span>
+          <h2 class="section-title" style="color: var(--color-white);">Dlaczego Warto Nam Zaufać?</h2>
+          <div class="title-divider" style="background-color: var(--color-beige);"></div>
+        </div>
+        <div class="why-grid">
+          <!-- Tile 1 -->
+          <div class="why-tile">
+            <svg class="why-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12M12 12c2.5-2.5 6-2.5 6-2.5S18 13 15.5 15.5M12 12c-2.5-2.5-6-2.5-6-2.5S6 13 8.5 15.5"/></svg>
+            <h3>Naturalne karmienie</h3>
+            <p>Podstawą diety naszych brojlerów jest prażona pszenica pochodząca z zaufanych upraw. Bez pasz GMO i sztucznych barwników.</p>
+          </div>
+          <!-- Tile 2 -->
+          <div class="why-tile">
+            <svg class="why-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <h3>Brak chemii i antybiotyków</h3>
+            <p>Nie stosujemy antybiotyków jako stymulatorów wzrostu ani nastrzykiwania wody. Kupujesz czyste, pełnowartościowe i zdrowe mięso.</p>
+          </div>
+          <!-- Tile 3 -->
+          <div class="why-tile">
+            <svg class="why-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.64 5.64l2.83 2.83M15.53 15.53l2.83 2.83M5.64 18.36l2.83-2.83M15.53 8.47l2.83-2.83"/></svg>
+            <h3>Niezrównana świeżość</h3>
+            <p>Nasze kurczaki nie leżą na półkach marketów. Są przygotowywane pod konkretne zamówienie i natychmiast dostarczane.</p>
+          </div>
+          <!-- Tile 4 -->
+          <div class="why-tile">
+            <svg class="why-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <h3>Lokalna i etyczna produkcja</h3>
+            <p>Jesteśmy dumni, że prowadzimy zrównoważoną hodowlę w Załęczu Małym. Dbamy o dobrostan zwierząt i czystość ekologiczną.</p>
+          </div>
+          <!-- Tile 5 -->
+          <div class="why-tile">
+            <svg class="why-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg>
+            <h3>Tradycyjny, głęboki smak</h3>
+            <p>Tradycyjna metoda hodowli sprawia, że mięso smakuje zupełnie inaczej niż drób przemysłowy. Przywracamy smak prawdziwej wsi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZASTOSOWANIE MIĘSA -->
+    <section id="zastosowanie" class="culinary-section">
+      <div class="container">
+        <div class="culinary-layout">
+          <div class="culinary-image-container">
+            <img src="./src/assets/images/roasted_chicken_1782899305666.jpg" alt="Złocisty, pieczony swojski kurczak" class="culinary-img" referrerPolicy="no-referrer">
+          </div>
+          <div class="culinary-content">
+            <span class="section-tag">Zastosowanie kulinarne</span>
+            <h2 class="section-title">Idealne do Codziennej Kuchni</h2>
+            <div class="title-divider-left"></div>
+            <p class="culinary-lead">Mięso idealne do codziennej kuchni i tradycyjnych polskich potraw. Poznaj wyjątkowy smak, który zachwyci wszystkich domowników.</p>
+            
+            <div class="use-cases">
+              <!-- Case 1 -->
+              <div class="use-case-item">
+                <span class="use-case-num">01</span>
+                <div>
+                  <h4>Wyśmienity, esencjonalny rosół</h4>
+                  <p>Tylko swojski kurczak potrafi oddać do wywaru głęboki, złocisty kolor i intensywny, tradycyjny zapach dawnych lat.</p>
+                </div>
+              </div>
+              <!-- Case 2 -->
+              <div class="use-case-item">
+                <span class="use-case-num">02</span>
+                <div>
+                  <h4>Chrupiąca pieczeń z piekarnika</h4>
+                  <p>Mięso brojlera karmionego pszenicą zachowuje dużą soczystość w środku, a skórka piecze się na piękny, chrupiący złocisty kolor.</p>
+                </div>
+              </div>
+              <!-- Case 3 -->
+              <div class="use-case-item">
+                <span class="use-case-num">03</span>
+                <div>
+                  <h4>Soczysty i aromatyczny grill</h4>
+                  <p>Dzięki optymalnej strukturze mięso idealnie chłonie marynaty ziołowe, stając się gwiazdą każdego ogrodowego grilla.</p>
+                </div>
+              </div>
+              <!-- Case 4 -->
+              <div class="use-case-item">
+                <span class="use-case-num">04</span>
+                <div>
+                  <h4>Zdrowe i pożywne obiady rodzinne</h4>
+                  <p>Doskonałe, czyste źródło białka dla rosnących dzieci i osób aktywnych, bez hormonów, pestycydów i chemii.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOSTAWA SECTION -->
+    <section id="dostawa" class="delivery-section">
+      <div class="container">
+        <div class="delivery-card">
+          <div class="delivery-icon-big">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h2>Dostawa Prosto Do Twoich Drzwi</h2>
+          <p class="delivery-desc">Dbamy o najwyższe standardy świeżości. Kurczaki dostarczamy w dogodnych terminach, z zachowaniem właściwych warunków chłodniczych.</p>
+          
+          <div class="delivery-zones">
+            <div class="zone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 20px; height: 20px; color: var(--color-green);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <strong>Wieluń i okolice</strong>
+            </div>
+            <div class="zone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 20px; height: 20px; color: var(--color-green);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <strong>Działoszyn i okolice</strong>
+            </div>
+            <p class="zone-info">Masz wątpliwości czy dowozimy do Twojej miejscowości? Zadzwoń do nas i zapytaj o szczegóły dostawy!</p>
+          </div>
+          
+          <div class="delivery-steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <h4>Zamówienie</h4>
+              <p>Zadzwoń pod numer <strong>535 133 195</strong> lub napisz do nas na Facebooku.</p>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <h4>Ustalenie terminu</h4>
+              <p>Wspólnie dobieramy dzień i przybliżoną godzinę dostawy świeżego mięsa.</p>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <h4>Świeża dostawa</h4>
+              <p>Cieszysz się smakiem świeżego, zdrowego drobiu bezpośrednio w swoim domu!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT SECTION -->
+    <section id="kontakt" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Złóż zamówienie</span>
+          <h2 class="section-title">Skontaktuj Się Z Nami</h2>
+          <div class="title-divider"></div>
+          <p class="section-subtitle">Zadzwoń do nas lub wyślij wiadomość. Świeży drób czeka właśnie na Ciebie!</p>
+        </div>
+        
+        <div class="contact-grid">
+          <!-- Card Phone -->
+          <a href="tel:535133195" class="contact-card border-accent">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3>Zadzwoń do nas</h3>
+            <p class="contact-value">535 133 195</p>
+            <p class="contact-subtext">Kliknij i zadzwoń bezpośrednio</p>
+            <span class="contact-action-btn">Zadzwoń teraz</span>
+          </a>
+
+          <!-- Card Facebook -->
+          <a href="https://www.facebook.com/profile.php?id=61578587256742" target="_blank" rel="noopener noreferrer" class="contact-card border-facebook">
+            <div class="contact-card-icon fb-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </div>
+            <h3>Napisz na Facebooku</h3>
+            <p class="contact-value">Odwiedź profil</p>
+            <p class="contact-subtext">Szybki kontakt przez Messenger</p>
+            <span class="contact-action-btn fb-btn">Przejdź do profilu</span>
+          </a>
+
+          <!-- Card Address -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Gospodarstwo</h3>
+            <p class="contact-value" style="font-size: 1.6rem;">Załęcze Małe</p>
+            <p class="contact-subtext">98-335 Załęcze Małe, woj. łódzkie</p>
+            <span class="contact-badge-info">Odbiór osobisty i dowóz</span>
+          </div>
+        </div>
+
+        <!-- Farm Branding Box -->
+        <div class="contact-logo-box">
+          <img src="https://i.ibb.co/gbqqzdVz/522962860-122102818592952908-3706293709010503052-n.jpg" alt="Logo Kurczaki Brojlery" class="contact-farm-logo" referrerPolicy="no-referrer">
+          <h4>Kurczaki Brojlery – Mięso z kurczaka swojskie</h4>
+          <p>Gwarantujemy najwyższą jakość mięsa prosto z rąk doświadczonego, polskiego rolnika.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>Kurczaki Brojlery</h3>
+            <p>Tradycyjne gospodarstwo drobiarskie z Załęcza Małego. Oferujemy zdrowe, świeże i w pełni naturalne mięso z kurczaka brojler karmionego prażoną pszenicą z własnej hodowli.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Szybkie Linki</h4>
+            <ul>
+              <li><a href="#o-nas">O nas</a></li>
+              <li><a href="#oferta">Nasza oferta</a></li>
+              <li><a href="#dlaczego-my">Dlaczego my?</a></li>
+              <li><a href="#zastosowanie">Zastosowanie kulinarne</a></li>
+              <li><a href="#dostawa">Zasady dostawy</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Kontakt</h4>
+            <p>Telefon: <a href="tel:535133195">535 133 195</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61578587256742" target="_blank" rel="noopener noreferrer">Kurczaki Brojlery</a></p>
+            <p>Lokalizacja: Załęcze Małe, 98-335</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Kurczaki Brojlery – Mięso z kurczaka swojskie. Wszelkie prawa zastrzeżone.</p>
+          <p class="footer-author">Świeżość i tradycja z polskiego gospodarstwa</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Kurczaki Brojlery - Mięso z kurczaka swojskie",
+  "description": "Profesjonalna strona lokalnego gospodarstwa drobiarskiego oferującego świeże, naturalne mięso z kurczaka brojlera.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
